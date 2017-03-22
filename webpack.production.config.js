@@ -71,6 +71,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/template.html',
             title: 'React Redux Build',
+            favicon: './favicon.ico',
         }),
     ],
 };

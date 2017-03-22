@@ -4,7 +4,7 @@
   "description": "Portfolio",
   "main": "''",
   "scripts": {
-    "build": "webpack --config webpack.production.config.js --progress --profile --colors",
+    "build": "webpack --config webpack.production.config.js --progress --profile --colors && mv web/* . && rm -r web",
     "start": "npm-run-all -p test:watch start-dev",
     "start-dev": "sleep 3 && webpack-dev-server --progress --colors",
     "test": "mocha tests/test-setup.js \"./**/*.spec.js\" --reporter progress",
