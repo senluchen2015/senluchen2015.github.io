@@ -1,0 +1,26 @@
+.return-wrapper {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    color: grey;
+    transform: rotate(0deg);
+    position: relative;
+    margin-top: 40px;
+    cursor: pointer;
+    .down-arrow {
+        border: solid grey;
+        border-width: 0 .6em .6em 0;
+        display: inline-block;
+        padding: .6em;
+        transform: rotate(-135deg);
+        animation: blinker 2s linear infinite;
+        position: relative;
+        bottom: 0px;
+    }
+    @keyframes blinker {
+      50% {
+        bottom: -10px;
+        opacity: 0;
+      }
+    }
+}

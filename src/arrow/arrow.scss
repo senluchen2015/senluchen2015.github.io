@@ -1,0 +1,24 @@
+.arrow-wrapper {
+    width: 100%;
+    text-align: center;
+    color: orange;
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: 35px;
+    .down-arrow {
+        border: solid orange;
+        border-width: 0 .6em .6em 0;
+        display: inline-block;
+        padding: .6em;
+        transform: rotate(45deg);
+        animation: blinker 2s linear infinite;
+        position: relative;
+        bottom: 0px;
+    }
+    @keyframes blinker {
+      50% {
+        bottom: -10px;
+        opacity: 0;
+      }
+    }
+}

@@ -1,0 +1,38 @@
+.contact-wrapper {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+    text-align: center;
+    z-index: 1;
+	.links {
+		width: 80px;
+		margin: 10px;
+		&:hover {
+			transform: scale(1.2);
+		}
+	    transition:all 0.3s ease;
+	}
+}
+
+@media screen and (max-width:1000px) {
+	.contact-wrapper {
+		left: 0;
+		right: 0;
+		position: relative;
+		top: 20px;
+	}
+}
+
+/* Mobile */
+@media only screen
+	and (max-device-width: 736px)
+	and (-webkit-min-device-pixel-ratio: 2),
+	(-webkit-min-device-pixel-ratio: 3)
+	{
+    .contact-wrapper {
+        position: relative;
+        text-align: center;
+        bottom: 0;
+        right: 0;
+    }
+}
