@@ -70,7 +70,7 @@ module.exports = {
         new ExtractTextPlugin('style-[contenthash].css'),
         new HtmlWebpackPlugin({
             template: './src/template.html',
-            title: 'React Redux Build',
+            title: 'Sen Lu Tom Chen',
             favicon: './favicon.ico',
         }),
     ],
