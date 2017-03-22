@@ -1,0 +1,79 @@
+nav {
+  width: 15%;
+  min-height: 100vh;
+  background: white;
+  margin: 0.8em;
+  border-radius: 0.8em;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
+  nav h2 {
+    padding: 0.8em;
+    font-size: 1.5em;
+    color: #6d9cbe;
+    border-bottom: 2px solid; }
+  nav a {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+    color: #232323;
+    margin-top: 10px;
+    padding: 20px;
+    text-decoration: none; }
+    nav a:hover {
+      background: #e8bf6a; }
+section {
+  padding: 0.8em;
+  margin: 0.8em;
+  border-radius: 0.8em;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border: 1px solid white;
+  background: white; }
+  section h2 {
+    color: #232323; }
+  section .pre-wrapper .hljs {
+    padding: 2em 1em;
+    border-radius: 0.8em; }
+.react-component.accordion label {
+  cursor: pointer;
+  text-decoration: underline; }
+  .react-component.accordion label:before {
+    display: inline-block;
+    content: "\25B6";
+    margin-right: 10px;
+    font-size: 0.8em;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: -o-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease, -o-transform 0.3s ease; }
+  .react-component.accordion label.open:before {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+.react-component.accordion .children {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .react-component.accordion .children.open {
+    opacity: 1;
+    max-height: 100vh; }
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: -webkit-linear-gradient(85deg, #e8bf6a 30%, lightblue 90%);
+  background: -o-linear-gradient(85deg, #e8bf6a 30%, lightblue 90%);
+  background: linear-gradient(5deg, #e8bf6a 30%, lightblue 90%); }
+  body .root {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    body .root .main-container {
+      width: 85%; }
