@@ -35,10 +35,10 @@ section {
   section .pre-wrapper .hljs {
     padding: 2em 1em;
     border-radius: 0.8em; }
-.react-component.accordion label {
+.reusable-react.accordion label {
   cursor: pointer;
   text-decoration: underline; }
-  .react-component.accordion label:before {
+  .reusable-react.accordion label:before {
     display: inline-block;
     content: "\25B6";
     margin-right: 10px;
@@ -48,22 +48,83 @@ section {
     -o-transition: -o-transform 0.3s ease;
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease, -o-transform 0.3s ease; }
-  .react-component.accordion label.open:before {
+  .reusable-react.accordion label.open:before {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
          -o-transform: rotate(90deg);
             transform: rotate(90deg); }
 
-.react-component.accordion .children {
+.reusable-react.accordion .children {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .react-component.accordion .children.open {
+  .reusable-react.accordion .children.open {
     opacity: 1;
     max-height: 100vh; }
+.reusable-react.sortable-table a {
+  cursor: pointer; }
+
+.reusable-react.sortable-table table {
+  border-collapse: collapse;
+  width: 100%; }
+  .reusable-react.sortable-table table th, .reusable-react.sortable-table table td {
+    text-align: left;
+    padding: 0.5em; }
+  .reusable-react.sortable-table table tr {
+    border-bottom: 1px solid; }
+  .reusable-react.sortable-table table .sorted {
+    color: red; }
+
+.reusable-react.sortable-table .pages {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center; }
+  .reusable-react.sortable-table .pages .previous:before {
+    content: "<"; }
+  .reusable-react.sortable-table .pages .next:before {
+    content: ">"; }
+  .reusable-react.sortable-table .pages a {
+    margin: 5px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+    .reusable-react.sortable-table .pages a.active {
+      color: red;
+      border-bottom: 2px solid red; }
+.reusable-react.progress-bar {
+  height: 2em;
+  width: 100%;
+  border-radius: 0.5em;
+  background: lightgray;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset; }
+  .reusable-react.progress-bar .progress {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: orange;
+    height: 100%;
+    border-radius: 0.5em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    overflow: hidden; }
+    .reusable-react.progress-bar .progress p {
+      padding-right: 10px;
+      color: black; }
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -76,4 +137,6 @@ body {
     display: -ms-flexbox;
     display: flex; }
     body .root .main-container {
-      width: 85%; }
+      width: 85%;
+      overflow: auto;
+      height: 100vh; }
