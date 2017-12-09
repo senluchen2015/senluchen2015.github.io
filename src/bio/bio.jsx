@@ -5,7 +5,7 @@ const Bio = () => {
         <div className="bio-wrapper">
             <h1>Sen Lu Tom Chen</h1>
             <p>
-                I am a front-end engineer at <a href="http://www.forio.com" target="_blank">Forio</a> in San Francisco, where I build web based simulations.
+                I am a front-end engineer in San Francisco, currently at <a href="https://sightmachine.com">Sight Machine</a>.
             </p>
             <p className="forio-links">
                 A sample of my professional work:
