@@ -26,7 +26,7 @@ const events = [
 	},
 	{
 		imgLink: require('static/img/forio-logo.png'),
-		date: 'Aug/2014 - May/2017',
+		date: 'Aug/2015 - May/2017',
 		text: 'Frontend engineer at Forio',
 	},
 	{
